@@ -14,7 +14,7 @@ body {
   max-width: 500px;
   margin: 30px auto;
   overflow: auto;
-  min-height: 300px;
+  height: auto;
   border: 1px solid steelblue;
   padding: 30px;
   border-radius: 5px;
@@ -32,8 +32,7 @@ body {
   background: #000;
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  margin: 5px;
+  padding: 10px 0px;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
@@ -54,16 +53,45 @@ body {
   width: 100%;
 }
 
-.task {
-  background: #f0f0f0;
-  margin: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
+.btn-add{
+text-align: center;
+min-width: 90px;
+overflow: visible;
+padding-right: 0;
+padding-left: 0;
 }
 
-.task.reminder {
-  border-left: 5px solid green;
-  padding-left: 15px;
+.task-container{
+  width: 100%;
+  display: flex;
+  background: #f0f0f0;
+  border: 1px solid rgb(118, 118, 118);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.task {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width:84%;
+  padding: 10px 20px;
+  cursor: pointer;
+  
+}
+.task-delete{
+  margin:  auto 0;
+  width: 8%;
+}
+
+.task-container .reminder-on {
+  padding-left: 20px;
+  margin: auto 0;
+  width: 8%;
+  color:green;
+}
+.task-container .reminder-off {
+  padding-left: 20px;
+  margin: auto 0;
+  width: 8%;
 }
 
 .task h3 {
@@ -110,4 +138,20 @@ body {
 footer {
   margin-top: 30px;
   text-align: center;
+}
+
+div .about{
+
+  margin-bottom: 2em;
+}
+
+.about-container{
+  display: block;
+  margin-top: 3em;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.about a{
+  text-decoration: none;
 }
